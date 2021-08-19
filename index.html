@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Investment Game</title>
+</head>
+<body>
+    <header class="wrapper header text-center">前澤社長とお金を増やそう!!</header>
+<main>
+    
+
+    <!-- ゲーム説明画面 -->
+    <section id="main-container" class="wrapper">
+        <div class="flexMain">
+            <div class="main-wrapper">  
+                <h2>＜ゲーム説明＞</h2>
+                <h2>1. このゲームは5年間でお金を増やすゲームです。<br>
+                    2. 最初の投資金額として1,000万円プレゼントします。<br>
+                    3. クイズに正解すると高い運用利率が得られます。<br>
+                    4. クイズに失敗すると70%の確率でマイナス運用になります。<br>
+                    5. クイズに全問正解して5年間でお金を増やしましょう!
+                </h2>
+                <p id="goRule" class="goRule">運用1年目に進む(Clickしてね)</p>
+            </div>        
+            <div id="maezawa" class="mainImage"><img src="img/jiji_start_today_maezawa_yusaku.jpg" alt=""></div>
+        </div>
+        
+    </section>    
+
+    <!-- stage画面 -->
+    <section id="stage">
+        <div class="stage-wrapper">
+            <h2 id="displayStage"></h2>
+            <p id="mondai">＜問題＞</p>
+            <p id="quest">ここに問題文が出題されます</p>
+            <p id="answerP" class="answerP">
+                <label><input type="radio" name="toi" value="1" class="answerPtext" style="transform: scale(1.5);"><span id="toi1"></span></label>
+                <label><input type="radio" name="toi" value="2" class="answerPtext" style="transform: scale(1.5);"><span id="toi2"></span></label>
+                <label><input type="radio" name="toi" value="3" class="answerPtext" style="transform: scale(1.5);"><span id="toi3"></span></label>
+            </p>
+            <p id="resultMessage"></p>
+            <p id="rightAns"></p>
+            <p id="yourClick"></p>
+            <button id="btn" class="btn">clickして運用率を見よう</button>
+            
+            <p id="yourPercent"></p>
+            <p id="yourInvestment"></p>
+            <p id="btnNext" class="btnNext">次の年に進む</p>
+        </div>
+    </section>
+
+    <!-- 最終画面 -->
+    <section id="resultPage" class="resultPage wrapper">
+        <div class="flexResultPage">
+            <div class="result-wrapper">
+                <div class="">
+                    <h1>結果発表</h1>
+                    <p>あなたの運用成績は</p>
+                    <p id="returnPercent"></p>
+                    <p id="finalResult"></p>
+                    <p id="profit"></p>
+                </div>
+                <p id="restart" class="restart">topに戻る</p>
+            
+            </div>
+            <!-- <div id="maezawa" class="resultImageWin"><img src="img/jiji_start_today_maezawa_yusaku.jpg" alt=""></div>
+            <div id="kasuga" class="resultImageLose"><img src="img/kasuga.jpg" alt=""></div> -->
+            <canvas id="resultChart" width="5" height="5"></canvas>    
+        </div>
+    </section>
+</main>
+
+<!-- footer -->
+<footer class="wrapper text-center">all rights reserved moneyLoveCompany Ltd. 2021</footer>
+    
+<!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="index.js"></script>
+</body>
+</html>

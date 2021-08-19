@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+html{
+    font-size: 62.5%;   /* 16px × 62.5% =10px */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #222222;
+    
+    border-color: #cacaca;
+    font-size: 1.0rem;
+    font-family: "Meiryo","メイリオ","MS PGothic","MS UI Gothic",Arial,sans-serif;
+    background-image: url(img/background.jpg);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 2.3rem;
+}
+
+li{
+    font-size: 2rem;
+}
+
+main{
+    height: 500px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url(img/white.jpg);
+    background-size: cover;
+    background-color: rgba(red, green, blue, 0.5);
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.header{
+    background-color: rgb(206, 204, 204);
+    margin-top: 50px;
+    font-size: 3rem;
+    padding: 10px 0;
+}
+
+footer{
+    background: rgb(219, 215, 214);
+    padding: 10px 0;
+    font-size: 1.5rem;
+}
+
+/* main container */
+
+.main-wrapper{
+    text-align: center;
+    padding: 50px 20px;
+    line-height: 2;
+
+}
+
+.goRule{
+    display: block;
+    justify-content: center;
+    padding: 5px 0;
+    margin: 30px auto;
+    width: 400px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.goRule:hover{
+    background-color: rgb(95, 93, 93);
+    color: white;
+}
+
+.mainImage{
+    margin: auto 0;
+}
+
+.mainImage img{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    margin: auto 50px;
+}
+
+.flexMain{
+    display: flex;
+    justify-content: center;
+}
+
+/* stage画面 */
+#stage{
+    display: none;
+}
+
+#btn{
+    display: none;
+}
+
+#btnNext{
+    display: none;
+}
+
+.stage-wrapper{
+    text-align: center;
+    padding: 50px 0;
+    line-height: 2;
+}
+
+.answerP{
+    padding: 0 30px;
+}
+
+.answerPtext{
+    margin: 0 10px;
+}
+
+.btn{
+    width: 300px;
+    font-size: 2.3rem;
+    margin: 30px 0;
+    cursor: pointer;
+    background-color: rgb(209, 209, 209);
+}
+
+.btn:hover{
+    background-color: rgb(95, 93, 93);
+    color: white;
+}
+
+.btnNext{
+    display: block;
+    justify-content: center;
+    padding: 5px 0;
+    margin: 30px auto;
+    width: 300px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnNext:hover{
+    background-color: rgb(95, 93, 93);
+    color: white;
+}
+
+
+/* result画面 */
+#resultPage{
+    display: none;
+}
+
+.result-wrapper{
+    text-align: center;
+    padding: 10px 0;
+    line-height: 2;
+    margin: auto 20px;
+}
+
+.restart{
+    font-size: 1.8rem;
+    display: block;
+    justify-content: center;
+    padding: 5px 0;
+    margin: 10px auto;
+    width: 300px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.restart:hover{
+    background-color: rgb(95, 93, 93);
+    color: white;
+}
+
+
+.flexResultPage{
+    display: flex;
+    justify-content: center;
+}
+
+
+#resultChart {
+    max-width:480px;
+    max-height:360px;
+    margin: auto 20px;
+}
